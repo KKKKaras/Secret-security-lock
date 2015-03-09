@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1677980F1A84B15200EDC816 /* img.png in Resources */ = {isa = PBXBuildFile; fileRef = 1677980E1A84B15100EDC816 /* img.png */; };
+		169BCC7A1A80C816008A8C81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169BCC791A80C816008A8C81 /* AppDelegate.swift */; };
+		169BCC7C1A80C816008A8C81 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169BCC7B1A80C816008A8C81 /* Images.xcassets */; };
+		169BCC7F1A80C816008A8C81 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 169BCC7D1A80C816008A8C81 /* LaunchScreen.xib */; };
+		169BCC8B1A80C816008A8C81 /* _____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169BCC8A1A80C816008A8C81 /* _____Tests.swift */; };
+		169BCC951A80C8B5008A8C81 /* PassClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169BCC941A80C8B5008A8C81 /* PassClock.swift */; };
+		169BCC971A80C8CA008A8C81 /* TimeCompare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169BCC961A80C8CA008A8C81 /* TimeCompare.swift */; };
+		169BCC991A80C8ED008A8C81 /* UserManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169BCC981A80C8ED008A8C81 /* UserManage.swift */; };
+		169BCC9B1A80C8FD008A8C81 /* MoreAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169BCC9A1A80C8FD008A8C81 /* MoreAbout.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		169BCC851A80C816008A8C81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 169BCC6C1A80C816008A8C81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 169BCC731A80C816008A8C81;
+			remoteInfo = "金山密保锁";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1677980E1A84B15100EDC816 /* img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img.png; sourceTree = "<group>"; };
+		168AE6351A8852D5003A79FB /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		169BCC741A80C816008A8C81 /* 金山密保锁.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "金山密保锁.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		169BCC781A80C816008A8C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		169BCC791A80C816008A8C81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		169BCC7B1A80C816008A8C81 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		169BCC7E1A80C816008A8C81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		169BCC841A80C816008A8C81 /* 金山密保锁Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "金山密保锁Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		169BCC891A80C816008A8C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		169BCC8A1A80C816008A8C81 /* _____Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_____Tests.swift"; sourceTree = "<group>"; };
+		169BCC941A80C8B5008A8C81 /* PassClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassClock.swift; sourceTree = "<group>"; };
+		169BCC961A80C8CA008A8C81 /* TimeCompare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeCompare.swift; sourceTree = "<group>"; };
+		169BCC981A80C8ED008A8C81 /* UserManage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManage.swift; sourceTree = "<group>"; };
+		169BCC9A1A80C8FD008A8C81 /* MoreAbout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreAbout.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		169BCC711A80C816008A8C81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		169BCC811A80C816008A8C81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		169BCC6B1A80C816008A8C81 = {
+			isa = PBXGroup;
+			children = (
+				169BCC761A80C816008A8C81 /* 金山密保锁 */,
+				169BCC871A80C816008A8C81 /* 金山密保锁Tests */,
+				169BCC751A80C816008A8C81 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		169BCC751A80C816008A8C81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				169BCC741A80C816008A8C81 /* 金山密保锁.app */,
+				169BCC841A80C816008A8C81 /* 金山密保锁Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		169BCC761A80C816008A8C81 /* 金山密保锁 */ = {
+			isa = PBXGroup;
+			children = (
+				169BCC791A80C816008A8C81 /* AppDelegate.swift */,
+				169BCC941A80C8B5008A8C81 /* PassClock.swift */,
+				168AE6351A8852D5003A79FB /* MyPlayground.playground */,
+				1677980E1A84B15100EDC816 /* img.png */,
+				169BCC961A80C8CA008A8C81 /* TimeCompare.swift */,
+				169BCC981A80C8ED008A8C81 /* UserManage.swift */,
+				169BCC9A1A80C8FD008A8C81 /* MoreAbout.swift */,
+				169BCC7B1A80C816008A8C81 /* Images.xcassets */,
+				169BCC7D1A80C816008A8C81 /* LaunchScreen.xib */,
+				169BCC771A80C816008A8C81 /* Supporting Files */,
+			);
+			path = "金山密保锁";
+			sourceTree = "<group>";
+		};
+		169BCC771A80C816008A8C81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				169BCC781A80C816008A8C81 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		169BCC871A80C816008A8C81 /* 金山密保锁Tests */ = {
+			isa = PBXGroup;
+			children = (
+				169BCC8A1A80C816008A8C81 /* _____Tests.swift */,
+				169BCC881A80C816008A8C81 /* Supporting Files */,
+			);
+			path = "金山密保锁Tests";
+			sourceTree = "<group>";
+		};
+		169BCC881A80C816008A8C81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				169BCC891A80C816008A8C81 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		169BCC731A80C816008A8C81 /* 金山密保锁 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 169BCC8E1A80C816008A8C81 /* Build configuration list for PBXNativeTarget "金山密保锁" */;
+			buildPhases = (
+				169BCC701A80C816008A8C81 /* Sources */,
+				169BCC711A80C816008A8C81 /* Frameworks */,
+				169BCC721A80C816008A8C81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "金山密保锁";
+			productName = "金山密保锁";
+			productReference = 169BCC741A80C816008A8C81 /* 金山密保锁.app */;
+			productType = "com.apple.product-type.application";
+		};
+		169BCC831A80C816008A8C81 /* 金山密保锁Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 169BCC911A80C816008A8C81 /* Build configuration list for PBXNativeTarget "金山密保锁Tests" */;
+			buildPhases = (
+				169BCC801A80C816008A8C81 /* Sources */,
+				169BCC811A80C816008A8C81 /* Frameworks */,
+				169BCC821A80C816008A8C81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				169BCC861A80C816008A8C81 /* PBXTargetDependency */,
+			);
+			name = "金山密保锁Tests";
+			productName = "金山密保锁Tests";
+			productReference = 169BCC841A80C816008A8C81 /* 金山密保锁Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		169BCC6C1A80C816008A8C81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = invoker;
+				TargetAttributes = {
+					169BCC731A80C816008A8C81 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					169BCC831A80C816008A8C81 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 169BCC731A80C816008A8C81;
+					};
+				};
+			};
+			buildConfigurationList = 169BCC6F1A80C816008A8C81 /* Build configuration list for PBXProject "金山密保锁" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 169BCC6B1A80C816008A8C81;
+			productRefGroup = 169BCC751A80C816008A8C81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				169BCC731A80C816008A8C81 /* 金山密保锁 */,
+				169BCC831A80C816008A8C81 /* 金山密保锁Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		169BCC721A80C816008A8C81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169BCC7F1A80C816008A8C81 /* LaunchScreen.xib in Resources */,
+				1677980F1A84B15200EDC816 /* img.png in Resources */,
+				169BCC7C1A80C816008A8C81 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		169BCC821A80C816008A8C81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		169BCC701A80C816008A8C81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169BCC9B1A80C8FD008A8C81 /* MoreAbout.swift in Sources */,
+				169BCC971A80C8CA008A8C81 /* TimeCompare.swift in Sources */,
+				169BCC7A1A80C816008A8C81 /* AppDelegate.swift in Sources */,
+				169BCC951A80C8B5008A8C81 /* PassClock.swift in Sources */,
+				169BCC991A80C8ED008A8C81 /* UserManage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		169BCC801A80C816008A8C81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169BCC8B1A80C816008A8C81 /* _____Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		169BCC861A80C816008A8C81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 169BCC731A80C816008A8C81 /* 金山密保锁 */;
+			targetProxy = 169BCC851A80C816008A8C81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		169BCC7D1A80C816008A8C81 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				169BCC7E1A80C816008A8C81 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		169BCC8C1A80C816008A8C81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		169BCC8D1A80C816008A8C81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		169BCC8F1A80C816008A8C81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "金山密保锁/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		169BCC901A80C816008A8C81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "金山密保锁/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		169BCC921A80C816008A8C81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "金山密保锁Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/金山密保锁.app/金山密保锁";
+			};
+			name = Debug;
+		};
+		169BCC931A80C816008A8C81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "金山密保锁Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/金山密保锁.app/金山密保锁";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		169BCC6F1A80C816008A8C81 /* Build configuration list for PBXProject "金山密保锁" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				169BCC8C1A80C816008A8C81 /* Debug */,
+				169BCC8D1A80C816008A8C81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		169BCC8E1A80C816008A8C81 /* Build configuration list for PBXNativeTarget "金山密保锁" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				169BCC8F1A80C816008A8C81 /* Debug */,
+				169BCC901A80C816008A8C81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		169BCC911A80C816008A8C81 /* Build configuration list for PBXNativeTarget "金山密保锁Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				169BCC921A80C816008A8C81 /* Debug */,
+				169BCC931A80C816008A8C81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 169BCC6C1A80C816008A8C81 /* Project object */;
+}
