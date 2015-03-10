@@ -9,12 +9,22 @@
 import UIKit
 
 class PassClock: UIViewController {
-     let  time = UILabel(frame:CGRectMake(5, 64, 320, 20))
-     var numlaber = UILabel(frame:CGRectMake(13, 8, 40, 40))
+     let  time = UILabel(frame:CGRectMake(5, 64, 320, 20))//当前系统时间
+     var  secondTime = UILabel(frame:CGRectMake(80, 300, 320, 20))//还有多少秒刷新
+    let progress = UIProgressView(frame: CGRectMake(80, 290, 160, 10))//进图条
+     var arr1 = [String]()//数据源数组
+     var  cardA = UILabel()
+     var  cardB = UILabel()
+     var  cardC = UILabel()
+     var  cardD = UILabel()
+     var  cardE = UILabel()
+     var  cardF = UILabel()
+     var  allCard = [UILabel]()
+     var  time2 = 30
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        allCard = [cardA, cardB, cardC,cardA, cardB, cardC]
         time.textColor = UIColor .whiteColor()
         time.text = "令牌时间 2015-12-10 10:54:14"
         
@@ -34,13 +44,12 @@ class PassClock: UIViewController {
         imgScroll .addSubview(imgView1)
         imgScroll .addSubview(imgView2)
         imgScroll .addSubview(imgView3)
-        let progress = UIProgressView(frame: CGRectMake(80, 290, 160, 10))
-        progress.progress=0.3
+        
+        progress.progress=0
         self.view.addSubview(progress)
         
-        let secondTime = UILabel(frame:CGRectMake(80, 300, 320, 20))
         secondTime.textColor = UIColor .whiteColor()
-        secondTime.text = "密码将在29秒后刷新"
+        secondTime.text = "密码将在30秒后刷新"
         self.view .addSubview(secondTime)
         
         addNumberCard()
@@ -61,7 +70,6 @@ class PassClock: UIViewController {
     
     func addNumberCard()
     {
-       
         var cardNum = 6.0
         var appW  = 50.0
         var appH  = 55.0
@@ -94,13 +102,14 @@ class PassClock: UIViewController {
               var xgH = CGFloat(appH)
             cardView.frame=CGRectMake(xgX,xgY,xgW,xgH);
             var num =  arc4random_uniform(9)
+            allCard[index] = UILabel(frame:CGRectMake(13, 8, 40, 40))
+
+            allCard[index].text = String(num)
+            allCard[index].font =  UIFont.systemFontOfSize(40)
+            allCard[index].textColor = UIColor .blackColor()
            
-            numlaber.text = String(num)
-            numlaber.font =  UIFont.systemFontOfSize(40)
-            numlaber.textColor = UIColor .blackColor()
-            numlaber.tag=index
            
-            cardView .addSubview(numlaber)
+            cardView .addSubview(allCard[index])
 
             self.view .addSubview(cardView)
             
@@ -118,15 +127,13 @@ class PassClock: UIViewController {
     func arcNum() -> [String]
 
     {
-        var arr1 = [String]()
+        arr1 .removeAll()
+       
         for var index = 0; index < 6; ++index
-
         {
            var num =  arc4random_uniform(9)
            arr1.append(String(num))
-        
-        
-           
+           allCard[index].text=(String(num))
         }
         println(arr1)
         return arr1
@@ -139,6 +146,31 @@ class PassClock: UIViewController {
         var dateString = formatter.stringFromDate(date)
         //println(dateString)
         time.text="令牌时间:"+dateString
-    }
-
+      
+        UIView.animateWithDuration(30,
+            delay: 2.0,
+            options: .CurveEaseInOut | .AllowUserInteraction,
+            animations: {
+                self.progress.progress = (Float(( 30.0 - (Float(self.time2)) ) / 30.0))
+            },
+            completion: { finished in
+                println("Bug moved right!")
+               
+        })
+        
+       
+      
+        println(( 30 - time2 ) / 30)
+        
+        time2--
+        if(time2 == -1)
+        {
+            time2 = 30
+        }
+         println(time2)
+        secondTime.text = "密码将在" + (String(time2)) + "秒后刷新"
+        
+       
+        
+     }
 }
