@@ -122,6 +122,7 @@ class PassClock: UIViewController {
       {
         NSTimer .scheduledTimerWithTimeInterval(1.0, target: self, selector:Selector("timeChange"), userInfo: nil, repeats: true)
          NSTimer .scheduledTimerWithTimeInterval(2.0, target: self, selector:Selector("arcNum"), userInfo: nil, repeats: true)
+        NSTimer .scheduledTimerWithTimeInterval(0.1, target: self, selector:Selector("progreseChanege"), userInfo: nil, repeats: true)
     }
     
     func arcNum() -> [String]
@@ -147,21 +148,7 @@ class PassClock: UIViewController {
         //println(dateString)
         time.text="令牌时间:"+dateString
       
-        UIView.animateWithDuration(30,
-            delay: 2.0,
-            options: .CurveEaseInOut | .AllowUserInteraction,
-            animations: {
-                self.progress.progress = (Float(( 30.0 - (Float(self.time2)) ) / 30.0))
-            },
-            completion: { finished in
-                println("Bug moved right!")
-               
-        })
-        
-       
       
-        println(( 30 - time2 ) / 30)
-        
         time2--
         if(time2 == -1)
         {
@@ -173,4 +160,14 @@ class PassClock: UIViewController {
        
         
      }
+    func progreseChanege()
+    {
+      self.progress.progress = ((Float(( 30.00 - (Float(self.time2)) ) / 30.00)))
+        println((Float(( 30.00 - (Float(self.time2)) ) / 30.00)))
+    self.progress.time
+    
+    
+    
+
+    }
 }

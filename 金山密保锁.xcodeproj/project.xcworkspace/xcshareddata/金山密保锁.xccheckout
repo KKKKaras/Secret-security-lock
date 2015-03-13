@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>05721EAF-00EE-4746-BB4A-40A88F866B35</string>
+	<key>IDESourceControlProjectName</key>
+	<string>金山密保锁</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EF512B5CD10F28BEB51DA3074AF1B56500CC18AA</key>
+		<string>https://github.com/KKKKaras/Secret-security-lock.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>金山密保锁.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EF512B5CD10F28BEB51DA3074AF1B56500CC18AA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/KKKKaras/Secret-security-lock.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EF512B5CD10F28BEB51DA3074AF1B56500CC18AA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EF512B5CD10F28BEB51DA3074AF1B56500CC18AA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>%E9%87%91%E5%B1%B1%E5%AF%86%E4%BF%9D%E9%94%81</string>
+		</dict>
+	</array>
+</dict>
+</plist>
