@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		165A60A71AE09CC9004DFE71 /* TimeCompare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165A60A51AE09CC9004DFE71 /* TimeCompare.swift */; };
+		165A60A81AE09CC9004DFE71 /* TimeCompare.xib in Resources */ = {isa = PBXBuildFile; fileRef = 165A60A61AE09CC9004DFE71 /* TimeCompare.xib */; };
 		1677980F1A84B15200EDC816 /* img.png in Resources */ = {isa = PBXBuildFile; fileRef = 1677980E1A84B15100EDC816 /* img.png */; };
 		169BCC7A1A80C816008A8C81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169BCC791A80C816008A8C81 /* AppDelegate.swift */; };
 		169BCC7C1A80C816008A8C81 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169BCC7B1A80C816008A8C81 /* Images.xcassets */; };
 		169BCC7F1A80C816008A8C81 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 169BCC7D1A80C816008A8C81 /* LaunchScreen.xib */; };
 		169BCC8B1A80C816008A8C81 /* _____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169BCC8A1A80C816008A8C81 /* _____Tests.swift */; };
 		169BCC951A80C8B5008A8C81 /* PassClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169BCC941A80C8B5008A8C81 /* PassClock.swift */; };
-		169BCC971A80C8CA008A8C81 /* TimeCompare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169BCC961A80C8CA008A8C81 /* TimeCompare.swift */; };
 		169BCC991A80C8ED008A8C81 /* UserManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169BCC981A80C8ED008A8C81 /* UserManage.swift */; };
 		169BCC9B1A80C8FD008A8C81 /* MoreAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169BCC9A1A80C8FD008A8C81 /* MoreAbout.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		165A60A51AE09CC9004DFE71 /* TimeCompare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeCompare.swift; sourceTree = "<group>"; };
+		165A60A61AE09CC9004DFE71 /* TimeCompare.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeCompare.xib; sourceTree = "<group>"; };
 		1677980E1A84B15100EDC816 /* img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img.png; sourceTree = "<group>"; };
 		168AE6351A8852D5003A79FB /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		169BCC741A80C816008A8C81 /* 金山密保锁.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "金山密保锁.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,7 +43,6 @@
 		169BCC891A80C816008A8C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		169BCC8A1A80C816008A8C81 /* _____Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_____Tests.swift"; sourceTree = "<group>"; };
 		169BCC941A80C8B5008A8C81 /* PassClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassClock.swift; sourceTree = "<group>"; };
-		169BCC961A80C8CA008A8C81 /* TimeCompare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeCompare.swift; sourceTree = "<group>"; };
 		169BCC981A80C8ED008A8C81 /* UserManage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManage.swift; sourceTree = "<group>"; };
 		169BCC9A1A80C8FD008A8C81 /* MoreAbout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreAbout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,8 +90,9 @@
 				169BCC941A80C8B5008A8C81 /* PassClock.swift */,
 				168AE6351A8852D5003A79FB /* MyPlayground.playground */,
 				1677980E1A84B15100EDC816 /* img.png */,
-				169BCC961A80C8CA008A8C81 /* TimeCompare.swift */,
 				169BCC981A80C8ED008A8C81 /* UserManage.swift */,
+				165A60A51AE09CC9004DFE71 /* TimeCompare.swift */,
+				165A60A61AE09CC9004DFE71 /* TimeCompare.xib */,
 				169BCC9A1A80C8FD008A8C81 /* MoreAbout.swift */,
 				169BCC7B1A80C816008A8C81 /* Images.xcassets */,
 				169BCC7D1A80C816008A8C81 /* LaunchScreen.xib */,
@@ -167,6 +170,8 @@
 		169BCC6C1A80C816008A8C81 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = invoker;
 				TargetAttributes = {
@@ -205,6 +210,7 @@
 			files = (
 				169BCC7F1A80C816008A8C81 /* LaunchScreen.xib in Resources */,
 				1677980F1A84B15200EDC816 /* img.png in Resources */,
+				165A60A81AE09CC9004DFE71 /* TimeCompare.xib in Resources */,
 				169BCC7C1A80C816008A8C81 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,9 +230,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				169BCC9B1A80C8FD008A8C81 /* MoreAbout.swift in Sources */,
-				169BCC971A80C8CA008A8C81 /* TimeCompare.swift in Sources */,
 				169BCC7A1A80C816008A8C81 /* AppDelegate.swift in Sources */,
 				169BCC951A80C8B5008A8C81 /* PassClock.swift in Sources */,
+				165A60A71AE09CC9004DFE71 /* TimeCompare.swift in Sources */,
 				169BCC991A80C8ED008A8C81 /* UserManage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

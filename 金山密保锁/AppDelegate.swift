@@ -1,3 +1,4 @@
+
 //
 //  AppDelegate.swift
 //  金山密保锁
@@ -6,6 +7,11 @@
 //  Copyright (c) 2015年 invoker. All rights reserved.
 //
 
+let WIDTH = UIScreen.mainScreen().bounds.size.width
+let HEIGHT = UIScreen.mainScreen().bounds.size.height
+
+
+let safeDeviceId = "98709376522"
 import UIKit
 
 @UIApplicationMain
@@ -36,15 +42,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tabBarController=UITabBarController();
         tabBarController.viewControllers=navArr;
         
-        
+        deviceModel()
         self.window!.rootViewController=tabBarController;
         return true
     }
     /**
     方法传参数
     
-    :param: childVc Controller
-    :param: _title  title
+    - parameter childVc: Controller
+    - parameter _title:  title
     还可以添加颜色等各种参数
     swift  func setupChildViewController(childVc: UIViewController,_title:String)
      oc     -(void) setupChildViewController:(UIViewController *)childVc
@@ -82,17 +88,138 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    
+    func deviceModel()
+    {
+        
+        let string: NSString = "你好你好你好"
+        
+        var systemInfo = utsname ()
+        uname(&systemInfo)
+        print(systemInfo.machine )
+        
+         let data = systemInfo.machine.dataUsingEncoding(NSUTF8StringEncoding)
+        print(data)
+//        var  version  = NSString(data: systemInfo.machine, encoding: NSUTF8StringEncoding)! as String
+//     
+//        print(version )
 
-//   setupChildViewController:(UIViewController *)childVc title:(NSString *) title imageName:(NSString *)imageName selectedImgName:(NSString *)selectedImageName
+        
+        
+    }
+
+//    + (NSString *) deviceModel;//设备型号
 //    {
+//    struct utsname systemInfo;
 //    
-//    childVc.view.backgroundColor=[UIColor whiteColor];
-//    childVc.title=title;
-//    childVc.tabBarItem.image=[UIImage imageNamed:imageName];
-//    childVc.tabBarItem.selectedImage=[[UIImage imageNamed:selectedImageName]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-//    UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:childVc];
-//    [self addChildViewController:nav];
+//    uname(&systemInfo);
 //    
+//    NSString *deviceString = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+//    
+//    NSLog(@"设备型号是：%@",deviceString);
+//    
+//    if ([deviceString isEqualToString:@"iPhone1,1"])    return @"iPhone";
+//    
+//    if ([deviceString isEqualToString:@"iPhone1,2"])    return @"iPhone 3G";
+//    
+//    if ([deviceString isEqualToString:@"iPhone2,1"])    return @"iPhone 3GS";
+//    
+//    if ([deviceString isEqualToString:@"iPhone3,1"])    return @"iPhone 4";
+//    
+//    if ([deviceString isEqualToString:@"iPhone3,2"])    return @"Verizon iPhone 4";
+//    
+//    if ([deviceString isEqualToString:@"iPhone3,3"])    return @"iPhone 4";
+//    
+//    if ([deviceString isEqualToString:@"iPhone4,1"])    return @"iPhone 4S";
+//    
+//    if ([deviceString isEqualToString:@"iPhone5,1"])    return @"iPhone 5";
+//    
+//    if ([deviceString isEqualToString:@"iPhone5,2"])    return @"iPhone 5";
+//    
+//    if ([deviceString isEqualToString:@"iPhone5,3"])    return @"iPhone 5c";
+//    
+//    if ([deviceString isEqualToString:@"iPhone5,4"])    return @"iPhone 5c";
+//    
+//    if ([deviceString isEqualToString:@"iPhone6,1"])    return @"iPhone 5s";
+//    
+//    if ([deviceString isEqualToString:@"iPhone6,2"])    return @"iPhone 5s";
+//    
+//    if ([deviceString isEqualToString:@"iPhone7,1"])    return @"iPhone 6 Plus";
+//    
+//    if ([deviceString isEqualToString:@"iPhone7,2"])    return @"iPhone 6";
+//    
+//    if ([deviceString isEqualToString:@"iPod1,1"])      return @"iPod Touch 1G";
+//    
+//    if ([deviceString isEqualToString:@"iPod2,1"])      return @"iPod Touch 2G";
+//    
+//    if ([deviceString isEqualToString:@"iPod3,1"])      return @"iPod Touch 3G";
+//    
+//    if ([deviceString isEqualToString:@"iPod4,1"])      return @"iPod Touch 4G";
+//    
+//    if ([deviceString isEqualToString:@"iPod5,1"])      return @"iPod Touch 5G";
+//    
+//    if ([deviceString isEqualToString:@"iPad1,1"])      return @"iPad";
+//    
+//    if ([deviceString isEqualToString:@"iPad2,1"])      return @"iPad 2";
+//    
+//    if ([deviceString isEqualToString:@"iPad2,2"])      return @"iPad 2";
+//    
+//    if ([deviceString isEqualToString:@"iPad2,3"])      return @"iPad 2";
+//    
+//    if ([deviceString isEqualToString:@"iPad2,4"])      return @"iPad 2";
+//    
+//    if ([deviceString isEqualToString:@"iPad3,1"])      return @"iPad 3";
+//    
+//    if ([deviceString isEqualToString:@"iPad3,2"])      return @"iPad 3";
+//    
+//    if ([deviceString isEqualToString:@"iPad3,3"])      return @"iPad 3";
+//    
+//    if ([deviceString isEqualToString:@"iPad3,4"])      return @"iPad 4";
+//    
+//    if ([deviceString isEqualToString:@"iPad3,5"])      return @"iPad 4";
+//    
+//    if ([deviceString isEqualToString:@"iPad3,6"])      return @"iPad 4";
+//    
+//    if ([deviceString isEqualToString:@"iPad4,1"])      return @"iPad Air";
+//    
+//    if ([deviceString isEqualToString:@"iPad4,2"])      return @"iPad Air";
+//    
+//    if ([deviceString isEqualToString:@"iPad4,3"])      return @"iPad Air";
+//    
+//    if ([deviceString isEqualToString:@"iPad5,3"])      return @"iPad Air2";
+//    
+//    if ([deviceString isEqualToString:@"iPad5,4"])      return @"iPad Air2";
+//    
+//    if ([deviceString isEqualToString:@"iPad2,5"])      return @"iPad mini 1G";
+//    
+//    if ([deviceString isEqualToString:@"iPad2,6"])      return @"iPad mini 1G";
+//    
+//    if ([deviceString isEqualToString:@"iPad2,7"])      return @"iPad mini 1G";
+//    
+//    if ([deviceString isEqualToString:@"iPad4,4"])      return @"iPad mini 2";
+//    
+//    if ([deviceString isEqualToString:@"iPad4,5"])      return @"iPad mini 2";
+//    
+//    if ([deviceString isEqualToString:@"iPad4,6"])      return @"iPad mini 2";
+//    
+//    if ([deviceString isEqualToString:@"iPad4,7"])      return @"iPad mini 3";
+//    
+//    if ([deviceString isEqualToString:@"iPad4,8"])      return @"iPad mini 3";
+//    
+//    if ([deviceString isEqualToString:@"iPad4,9"])      return @"iPad mini 3";
+//    
+//    
+//    if ([deviceString isEqualToString:@"i386"])         return @"Simulator";
+//    
+//    if ([deviceString isEqualToString:@"x86_64"])       return @"Simulator";
+//    
+//    
+//    if ([deviceString isEqualToString:@"iPad2,4"])    return @"iPhone 4";
+//    if ([deviceString isEqualToString:@"iPad2,5"])    return @"iPhone 4";
+//    NSLog(@"NOTE: Unknown device type: %@", deviceString);
+//    
+//    return deviceString;
 //    }
     
   

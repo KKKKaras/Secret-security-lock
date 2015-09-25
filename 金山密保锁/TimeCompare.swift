@@ -2,7 +2,7 @@
 //  TimeCompare.swift
 //  金山密保锁
 //
-//  Created by invoker on 15/2/3.
+//  Created by invoker on 15/4/17.
 //  Copyright (c) 2015年 invoker. All rights reserved.
 //
 
